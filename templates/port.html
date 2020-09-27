@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Port</title>
+</head>
+
+<body>
+    <div>
+        <p></p>
+        Current Port:
+        <h6 id="port">Not Available</h6>
+    </div>
+
+    <script>
+        document.getElementById("port").textContent = window.location.href.split("http://localhost:")[1].split("/")[0]
+    </script>
+</body>
+
+</html>
